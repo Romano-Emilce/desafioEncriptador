@@ -1,0 +1,271 @@
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body{
+    background-color: #F3F5FC;
+}
+.imgSignoExclamacion{
+    max-width: 100%;
+    width: 1rem;
+    object-fit: contain;  
+}
+header svg{
+    width: 6rem;
+    margin: 1.5em 0 0 1em;
+}
+.imgDesafio{
+    max-width: 100%;
+    width: 12em;
+    object-fit: contain;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+.sectionPresentacion{
+    grid-area: section;
+}
+footer{
+    grid-area: footer;
+}
+.falsoBody{
+    display:grid ;
+    grid-template-areas:
+    "header header section" 
+    "main main section"
+    "footer footer footer";
+    overflow: hidden;
+
+}
+ .sectionPresentacion{
+    background-color: white;
+   margin-right: 2em;
+    border-radius: 30px;
+    height: 96vh;
+    width: 75%;
+    margin-top: 1.2rem;
+    box-shadow: 0px 2px 15px 2px #CED4DA; 
+    resize: none;
+    border: none;
+ }
+ .ajustar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding-top: 10rem ;
+ }
+
+.ajustar .mensaje{
+    color: #495057;
+    font-size: 24px;
+    text-align: center;
+}
+.ajustar p{
+    color:#868E96;
+    font-size: 16px;
+    text-align: center;
+    padding: 0.1rem;
+}
+
+footer{
+    padding: 2rem;
+    background-color: #e9e6f8;
+    margin-top: 1.5rem;
+}
+footer h3{
+    text-align: center;
+    color: #356ea9;
+    font-size: 1.5em;
+}
+
+.main{
+    margin-left: 2rem;
+}
+.sectionAreaTexto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    margin-right: 1rem;
+}
+.ocultar{
+    display: none;
+}
+
+.textarea{
+    resize: none;
+    border: none;
+    font-family: "Inter", sans-serif;
+    background-color: #F3F5FC;
+    font-size: 32px;
+    color: #052051;    
+}
+.textarea::placeholder {
+    color:#0A3871;
+    font-size: 32px;
+}
+
+.alerta{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.5rem;
+    
+}
+.alerta p{
+    color: #495057;
+    font-size: 12px;
+    padding-left: 5px;
+}
+.padreBotones{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 0.5rem;
+    gap: 20px;   
+    padding-bottom: 1rem;
+
+}
+
+input{
+    width: 20rem;
+    height: 3.5rem;
+    border-radius: 15px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.botonEncriptador{
+    background-color: #0A3871;
+    color: white;
+    border: 1px solid #0A3871;
+}
+.botonDesencriptador{
+    background-color: #E9ECF8;
+    border: 1.3px solid #0A3871;
+    color:#0A3871;
+
+}
+.posicionCopiar{
+    padding-top: 19rem;
+}
+.botonCopiar{
+    background-color: white;
+    border: 1.3px solid #0A3871;
+    color:#0A3871;
+    width: 15em;
+}
+
+/*responsive*/
+
+@media (max-width:768px){
+    .falsoBody{
+        grid-template-areas:
+        "header"
+        "main"
+        "section"
+        "footer";
+        
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+
+        overflow: hidden;
+    }
+
+    header svg{
+        margin: 0.5em 0 0 0;
+    }
+
+    .main{
+        margin: auto;
+    }
+
+    .sectionAreaTexto{
+        padding: 0;
+        display: block;
+        margin: auto;
+    }
+
+    .contenedorTextArea{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .textarea{
+        margin: 0;
+        padding: 0.3rem;
+    }
+    .textarea::placeholder{
+        padding:2rem 0 0 1rem ;
+        color: #0A3871;
+        font-size: 32px;
+    }
+
+    .padreBotones{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    input{
+        width: 90%;
+        height: 3.5rem;
+    }
+    .alerta{
+        padding-left: 1rem;
+    }
+
+    .imgDesafio{
+        display: none;
+    }
+
+    .ajustar{
+        padding: 2rem 1rem 2rem 1rem;
+        gap: 1rem;
+    }
+
+    .sectionPresentacion{
+        height: 35vh;
+        margin: auto;
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1023px){
+    .falsoBody{
+        grid-template-areas:
+        "header"
+        "main"
+        "section"
+        "footer";
+        
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+
+        overflow: hidden;
+    }
+
+    .imgDesafio{
+        display: none;
+    }
+
+    .ajustar{
+        padding: 2rem 1rem 2rem 1rem;
+        gap: 1rem;
+    }
+
+    .sectionPresentacion{
+        height: 35vh;
+        margin: auto;
+        width: 80%;
+    }
+
+
+}
