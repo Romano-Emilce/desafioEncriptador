@@ -40,37 +40,31 @@ footer{
     "main main section"
     "footer footer footer";
     overflow: hidden;
-
 }
  .sectionPresentacion{
     background-color: white;
-   margin-right: 2em;
     border-radius: 30px;
-    height: 96vh;
-    width: 75%;
-    margin-top: 1.2rem;
+    margin: 1.2rem 3rem 0 3rem;
     box-shadow: 0px 2px 15px 2px #CED4DA; 
     resize: none;
     border: none;
- }
- .ajustar{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    padding-top: 10rem ;
+    
  }
 
-.ajustar .mensaje{
+ .sectionPresentacion .mensaje{
     color: #495057;
-    font-size: 24px;
+    font-size: 1.5em;
     text-align: center;
 }
-.ajustar p{
+.sectionPresentacion p{
     color:#868E96;
-    font-size: 16px;
+    font-size: 1em;
     text-align: center;
-    padding: 0.1rem;
+    padding: 0.8rem;
 }
 
 footer{
@@ -84,16 +78,14 @@ footer h3{
     font-size: 1.5em;
 }
 
-.main{
-    margin-left: 2rem;
-}
 .sectionAreaTexto{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
-    margin-right: 1rem;
+    padding: 1rem;
+    margin:1rem 2rem 0 5rem;
+    gap: 1rem;
 }
 .ocultar{
     display: none;
@@ -103,9 +95,11 @@ footer h3{
     resize: none;
     border: none;
     font-family: "Inter", sans-serif;
+    text-align: left;
     background-color: #F3F5FC;
-    font-size: 32px;
+    font-size: 2em;
     color: #052051;    
+
 }
 .textarea::placeholder {
     color:#0A3871;
@@ -150,9 +144,6 @@ input{
     color:#0A3871;
 
 }
-.posicionCopiar{
-    padding-top: 19rem;
-}
 .botonCopiar{
     background-color: white;
     border: 1.3px solid #0A3871;
@@ -174,35 +165,26 @@ input{
         grid-template-columns: auto;
 
         overflow: hidden;
+        width: 100%;
     }
 
     header svg{
-        margin: 0.5em 0 0 0;
-    }
-
-    .main{
-        margin: auto;
+        margin: 0.5rem 0 0 0;
     }
 
     .sectionAreaTexto{
         padding: 0;
         display: block;
-        margin: auto;
-    }
-
-    .contenedorTextArea{
-        width: 100%;
-        height: 50vh;
+        margin: 1rem;
     }
 
     .textarea{
-        margin: 0;
-        padding: 0.3rem;
+        margin: auto;
+
     }
     .textarea::placeholder{
         padding:2rem 0 0 1rem ;
         color: #0A3871;
-        font-size: 32px;
     }
 
     .padreBotones{
@@ -232,9 +214,14 @@ input{
     }
 
     .sectionPresentacion{
-        height: 35vh;
+        height: auto;
         margin: auto;
         width: 80%;
+        padding: 1rem;
+    }
+
+    .posicionCopiar{
+        padding:0;
     }
 }
 
@@ -262,10 +249,21 @@ input{
     }
 
     .sectionPresentacion{
-        height: 35vh;
+        height: auto;
         margin: auto;
         width: 80%;
     }
 
+    .main{
+        margin: 0;
+    }
+    .textarea::placeholder{
+        margin-left: -20px;
+    }
+    
+    .sectionAreaTexto{
+        padding: auto;
+        margin: 1rem;
+    }
 
 }

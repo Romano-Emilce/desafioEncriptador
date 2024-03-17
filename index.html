@@ -20,32 +20,30 @@
     
         <main class="main">
             <section class="sectionAreaTexto">
-                <div class="contenedorTextArea">
-                    <textarea name="text" cols="30" rows="10" placeholder="Ingrese el texto aqui" id="textArea" class="textarea"></textarea>
-                </div>
+                <textarea name="text" cols="30" rows="10" placeholder="Ingrese el texto aqui" id="textArea" class="textarea"></textarea>
+
                <div class="divPadreSectionAreaTexto">
-                <div class="alerta">
-                    <img src="img/signoExclamacion.jpg " class="imgSignoExclamacion" alt="Signo de exclamación">
-                    <p>Solo letras minúsculas y sin acentos</p>
-                </div>
-                <div class="padreBotones">
-                    <input type="button" id="btnEncriptador" class="botonEncriptador" value="Encriptar">
-                    <input type="button" id="btnDesencriptador" class="botonDesencriptador" value="Desencriptar">
-                </div>
+                    <div class="alerta">
+                        <img src="img/signoExclamacion.jpg " class="imgSignoExclamacion" alt="Signo de exclamación">
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </div>
+
+                    <div class="padreBotones">
+                        <input type="button" id="btnEncriptador" class="botonEncriptador" value="Encriptar">
+                        <input type="button" id="btnDesencriptador" class="botonDesencriptador" value="Desencriptar">
+                    </div>
                </div>
             </section>
         </main>
         
-        <section class="sectionPresentacion">
-            <div class="ajustar">
+        <section id="sectionPresentacion" class="sectionPresentacion">
                     <img src="img/imagenDesafio.png" alt="Persona arrodillada mirando una diamante con una lupa" id="imagen" class="imgDesafio">
-                    
-                        <p id="contenidoFinal" class="mensaje"> <strong>Ningún mensaje fue <br> encontrado </strong> </p>
-                        <p id="textoPresentacion">Ingrese el texto que desee encriptar o <br> desencriptar</p>
+                    <p id="contenidoFinal" class="mensaje"> <strong>Ningún mensaje fue <br> encontrado </strong> </p>
+                    <p id="textoPresentacion">Ingrese el texto que desee encriptar o <br> desencriptar</p>
+
                 <div class="posicionCopiar">
                     <input type="button" id="btnCopiar" class="botonCopiar ocultar " value="Copiar">
                 </div>
-            </div>
         </section>
 
         <footer>

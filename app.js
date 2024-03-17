@@ -12,6 +12,8 @@ const textoPresentacion = document.getElementById ("textoPresentacion");
 
 const imagen = document.getElementById ("imagen");
 
+const sectionPresentacion = document.getElementById("sectionPresentacion");
+
 let remplazar = [
     ["e", "enter"],
     ["i", "imes"],
@@ -42,7 +44,11 @@ btnEncriptador.addEventListener("click", () => {
     textoPresentacion.style.display = "none";
 
     btnCopiar.style.display = "block";
-    //seguir modificando los estilos
+
+    contenidoFinal.style.textAlign = "left";
+    sectionPresentacion.style.justifyContent = "space-between";
+    sectionPresentacion.style.padding = "1rem";
+    sectionPresentacion.style.gap = "1rem"
 
     console.log (encriptar(texto))
 });
@@ -59,7 +65,16 @@ btnDesencriptador.addEventListener("click", () => {
     }
      
     const textoDesencriptado = desencriptar(texto);
+    imagen.style.display = "none";
 
+    textoPresentacion.style.display = "none";
+
+    btnCopiar.style.display = "block";
+
+    contenidoFinal.style.textAlign = "left";
+    sectionPresentacion.style.justifyContent = "space-between";
+    sectionPresentacion.style.padding = "1rem";
+    sectionPresentacion.style.gap = "1rem"
     contenidoFinal.innerHTML = textoDesencriptado;
 });
 
@@ -83,4 +98,3 @@ btnCopiar.addEventListener("click", () => {
 });
 
 
-contenidoFinal.addEventListener
